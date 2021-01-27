@@ -21,6 +21,6 @@ const carSchema = new Schema({
         required:true,
         unique: true
     }
-}, {timestamps:true});
+}, {timestamps:true, versionKey:false});
 
 module.exports = model('Car', carSchema);
